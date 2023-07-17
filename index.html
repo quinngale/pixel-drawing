@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Drawing</title>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/86a006ef3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="card-header-title">
+                                Pixel Drawing
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <form id="form">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="field">
+                                            <label for="width" class="label">Width</label>
+                                            <div class="control">
+                                                <input type="number" name="width" id="width" class="input" min="1"
+                                                    max="16" step="1" value="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field">
+                                            <label for="height" class="label">Height</label>
+                                            <div class="control">
+                                                <input type="number" name="height" id="height" class="input" min="1"
+                                                    max="16" step="1" value="7">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-fullwidth" type="reset">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-arrow-rotate-left"></i>
+                                            </span>
+                                            <span>Reset</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card-content">
+                            <div id="pixel-canvas"></div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="field">
+                                <label class="label" for="output">Value</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="output" name="output" readonly>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-fullwidth" id="copy">
+                                        <span class="icon">
+                                            <i class="fa-regular fa-copy"></i>
+                                        </span>
+                                        <span>Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="card-footer-item">&copy; 2023 Quinn Gale</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
